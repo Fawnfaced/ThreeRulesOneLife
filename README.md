@@ -28,7 +28,7 @@ Every round, three random rules are in effect — from reversed controls to slow
 ---
 
 ##  Credits
-- **Game Design, Programming, Art:** Kristina Karan (karan.kristina@outlook.com)
+- **Game Design, Programming:** Kristina Karan (karan.kristina@outlook.com)
   
 
 ---
