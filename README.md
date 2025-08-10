@@ -34,5 +34,4 @@ Every round, three random rules are in effect — from reversed controls to slow
 ---
 
 ##  Links
-- **Play on itch.io:** [itch.io link](https://your-itch-link-here)
 - **Source Code:** [GitHub Repository](https://github.com/KristinaKaran/ThreeLivesThreeRules)
