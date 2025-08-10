@@ -20,9 +20,9 @@ Every round, three random rules are in effect — from reversed controls to slow
 ---
 
 ##  Installation (Windows)
-1. Download the `.zip` file from [itch.io](https://your-itch-link-here).
+1. Download the `.zip` file from https://kristina-karan.itch.io/three
 2. Extract the entire folder (Right-click → Extract All).
-3. Run `ThreeLivesThreeRules.exe`.
+3. Run `ThreeRulesOneLife.exe`.
 > If Windows SmartScreen appears, click **More info** → **Run anyway**.
 
 ---
