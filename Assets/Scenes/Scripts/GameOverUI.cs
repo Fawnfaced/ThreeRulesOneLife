@@ -11,9 +11,9 @@ public class GameOverUI : MonoBehaviour
     [Header("Game Over SFX")]
     public AudioClip gameOverSFX;
     [Range(0f, 1f)] public float sfxVolume = 0.9f;
-    [Range(0.1f, 2f)] public float sfxPitch = 0.85f; // <1.0 = sporije
+    [Range(0.1f, 2f)] public float sfxPitch = 0.85f; 
 
-    // (opciono) umesto trenutnog prekida, blago utišaj SFX pri kliku
+   
     public bool fadeOutOnClick = false;
     public float fadeOutDuration = 0.3f;
 
@@ -22,22 +22,21 @@ public class GameOverUI : MonoBehaviour
 
     void Awake()
     {
-        // panel/canvas je sakriven na startu
+        
         gameObject.SetActive(false);
 
-        // pripremi AudioSource za SFX
+        
         sfxSource = GetComponent<AudioSource>();
         if (sfxSource == null) sfxSource = gameObject.AddComponent<AudioSource>();
 
         sfxSource.loop = false;
         sfxSource.playOnAwake = false;
         sfxSource.dopplerLevel = 0f;
-        sfxSource.spatialBlend = 0f; // 2D zvuk
-    }
+        sfxSource.spatialBlend = 0f; 
 
     public void Show()
     {
-        // ako je već prikazan, samo ga pokaži (ne puštaj SFX ponovo)
+        
         if (shownOnce)
         {
             gameObject.SetActive(true);
@@ -47,10 +46,10 @@ public class GameOverUI : MonoBehaviour
 
         gameObject.SetActive(true);
 
-        // pauziraj igru dok je ekran vidljiv
+       
         Time.timeScale = 0f;
 
-        // pusti SFX jednom, sa sniženim pitch-om
+        
         if (gameOverSFX != null)
         {
             sfxSource.Stop();

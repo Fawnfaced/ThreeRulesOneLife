@@ -9,7 +9,7 @@ public class EnemyContactDamage : MonoBehaviour
     [Header("How to detect contact")]
     public bool useTrigger = true; 
 
-    private bool consumed = false; // sprečava dupli hit u istom kontaktu
+    private bool consumed = false; 
     private EnemyHealth enemyHealth;
     private Collider2D col;
 
@@ -37,7 +37,7 @@ public class EnemyContactDamage : MonoBehaviour
     private void TryHit(GameObject other)
     {
         var player = other.GetComponent<PlayerHealth>();
-        if (player == null) return; // nije player
+        if (player == null) return; 
 
         consumed = true;
 

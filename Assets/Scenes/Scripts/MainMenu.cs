@@ -5,12 +5,11 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(1); //Load scenu index 1 
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
     {
         Debug.Log("Quit Game");
-        Application.Quit(); // Radi samo u build verziji
-    }
+        Application.Quit(); 
 }

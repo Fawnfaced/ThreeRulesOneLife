@@ -31,13 +31,13 @@ public class MainMenuUI : MonoBehaviour
     public string gameSceneName = "Game";
 
     [Header("Menu Music")]
-    public AudioSource menuMusic;        // <- dodeli AudioSource sa menu muzikom
-    public bool fadeOutOnNewGame = true; // uključi/isključi fade
-    public float fadeOutDuration = 0.6f; // trajanje fade-outa u sekundama
+    public AudioSource menuMusic;        
+    public bool fadeOutOnNewGame = true; 
+    public float fadeOutDuration = 0.6f; 
 
     public void NewGame()
     {
-        Time.timeScale = 1f; // safety
+        Time.timeScale = 1f; 
 
         if (menuMusic != null && fadeOutOnNewGame)
         {
@@ -45,7 +45,7 @@ public class MainMenuUI : MonoBehaviour
         }
         else
         {
-            if (menuMusic) menuMusic.Stop(); // hard stop ako nema fade-a
+            if (menuMusic) menuMusic.Stop(); 
             SceneManager.LoadScene(string.IsNullOrEmpty(gameSceneName) ? "Game" : gameSceneName);
         }
     }

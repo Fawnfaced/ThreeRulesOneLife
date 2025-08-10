@@ -11,7 +11,7 @@ public class GameMusic : MonoBehaviour
 
     private AudioSource audioSource;
 
-    // Singleton guard – sprečava duplikate posle loadova
+    
     private static GameMusic instance;
 
     void Awake()
@@ -38,7 +38,7 @@ public class GameMusic : MonoBehaviour
 
     void Start()
     {
-        // Ako već startuješ u Game sceni, pusti odmah
+       
         if (SceneManager.GetActiveScene().name == gameSceneName)
             Play();
         else
@@ -47,12 +47,12 @@ public class GameMusic : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Uvek sinhronizuj jačinu sa sliderom u Inspectoru
+        
         audioSource.volume = volume;
 
         if (scene.name == gameSceneName)
         {
-            // U Game sceni sviraj loop
+            
             if (gameLoopMusic != null)
             {
                 if (audioSource.clip != gameLoopMusic)
@@ -64,7 +64,7 @@ public class GameMusic : MonoBehaviour
         }
         else
         {
-            // U svim drugim scenama (MainMenu itd.) zaustavi muziku
+            
             Stop();
         }
     }

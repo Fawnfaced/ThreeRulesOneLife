@@ -120,7 +120,7 @@ public class PlayerHealth : MonoBehaviour
             AudioSource.PlayClipAtPoint(deathSFX, listenerPos, deathVolume);
         }
 
-        // Prikaži Game Over ekran
+        
         var goUI = gameOverUI != null ? gameOverUI : FindObjectOfType<GameOverUI>(true);
         if (goUI != null)
         {

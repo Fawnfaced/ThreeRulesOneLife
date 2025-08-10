@@ -5,7 +5,7 @@ public class BulletBoundary : MonoBehaviour
     private Vector2 minBounds;
     private Vector2 maxBounds;
 
-    // PlayerShooting poziva ovo
+    
     public void SetBounds(Vector2 min, Vector2 max)
     {
         minBounds = min;

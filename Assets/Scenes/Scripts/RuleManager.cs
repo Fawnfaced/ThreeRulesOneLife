@@ -28,7 +28,7 @@ public class RuleManager : MonoBehaviour
     {
         activeRules.Clear();
 
-        // Napravi lokalni "pool" iz koga biramo bez ponavljanja
+        
         var pool = new List<string>(allRules);
         int toPick = Mathf.Min(3, pool.Count);
 
