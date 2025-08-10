@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: fb2bb333c872e1f44877ac4c60f1b781
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - popVFXPrefab: {fileID: 6987601697695275788, guid: 38786b227c1518a40815b303d7cfa0b2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
